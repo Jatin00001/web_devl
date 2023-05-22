@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        #forms1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="forms1">
+        
+        <form action="">
+            <h3>Job application</h3>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Entter your name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+    
+            <br><br>
+    
+            <label for="phonenum">Phone:</label>
+            <input type="tel" name="phonenum" id="phonenum" placeholder="Enter your number">
+    
+            <br><br>
+            
+            <label for="resume1">Resume</label>
+            <input type="file" name="resumefile" id="resume1">
+    
+            <br><br>
+    
+            <label for="experience">Experince</label>
+            <input type="number" name="experience" id="experience" min="0" max="50"> <!--- this min max set's the limit of our experience section "  --> 
+    
+            <br><br>
+            <fieldset>
+                <legend>skills:</legend>
+    
+                <label for="html1">html</label>
+                <input type="checkbox" name="html" id="html1">
+    
+                <label for="css1">css</label>
+                <input type="checkbox" name="css" id="css1">
+    
+                <label for="java1">Java</label>
+                <input type="checkbox" name="java" id="java1">
+            </fieldset>
+    
+            <br><br>
+    
+            <label for="highereducation">Highest Education</label>
+            <select id="highereducation" name = "highest" >
+                <option value="highschool">highschool</option>
+                <option value="cbse_12">cbse 12</option>
+                <option value="cbse_10"> cbse 10</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Avalability</legend>
+                <label for="fulltime">Fulltime</label>
+                <input type="radio" name="avalable" id="fulltime" value="1">
+                    <br>
+    
+                <label for="parttime">Part time</label>
+                <input type="radio" name="avalable" id="parttime" value="2">
+            </fieldset>
+            
+    
+            <br><br>
+    
+            <label for="additional">Additional comment</label>
+            <textarea name="textarea1" id="additional" cols="30" rows="10"></textarea>
+    
+    
+            <input type="button" value="Register">
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+</html>
