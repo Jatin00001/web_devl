@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .personal{
+            display: flex;
+            margin: auto;
+            width: 50%;
+            height: 100vh;
+        }
+
+            div fieldset{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua; 
+            }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <h1>complex Form</h1> -->
+    <div class="personal">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your Email" name="email" id="email">
+            <label for="Phone">Phone</label>
+            <input type="tel" placeholder="Enter your Phone" name="Phone" id="Phone">
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date">
+            <div class="gender" style="display: inline;">
+                <label for="">Gender</label>
+                <input type="checkbox" name="male" id="male">
+                <label for="males">Male</label>
+                <input type="checkbox" name="female" id="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form_cnty" style="display: inline;">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="none">Select</option>
+                    <option value="india">India</option>
+                    <option value="Indo">Indo</option>
+                    <option value="nepal">Nepal</option>
+                </select>
+            </div>
+    
+        </fieldset>
+    </div>
+</body>
+</html>
